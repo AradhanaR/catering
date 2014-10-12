@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
-
+gem 'heroku' #Still needed to run pgbackups command from heroku platform
+gem 'heroku-api'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 

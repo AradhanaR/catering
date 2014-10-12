@@ -6,6 +6,7 @@ gem 'heroku' #Still needed to run pgbackups command from heroku platform
 gem 'heroku-api'
 
 gem 'pg'
+gem 'unicorn'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby

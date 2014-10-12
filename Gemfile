@@ -4,17 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'heroku' #Still needed to run pgbackups command from heroku platform
 gem 'heroku-api'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
 
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -44,3 +35,15 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'jquery-rails', '2.0.0'
+
+group :development do
+   gem 'sqlite3', '1.3.5'
+end
+
+group :assets do
+   gem 'sass-rails',   '3.2.4'
+   gem 'coffee-rails', '3.2.2'
+   gem 'uglifier', '1.2.3'
+end

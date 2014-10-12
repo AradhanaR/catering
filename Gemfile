@@ -10,6 +10,9 @@ gem 'heroku-api'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
@@ -33,14 +36,13 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'jquery-rails', '2.0.0'
 
 group :development do
    gem 'sqlite3', '1.3.5'
 end
 
 group :assets do
-   gem 'sass-rails',   '3.2.4'
-   gem 'coffee-rails', '3.2.2'
+   gem 'sass-rails'
+   gem 'coffee-rails'
    gem 'uglifier', '1.2.3'
 end

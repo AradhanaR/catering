@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Catering</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+<title>Catering.com</title>
+<meta charset="utf-8">
+<%= javascript_include_tag "application" %>
+<% stylesheet_link_tag "skins/#{@section}", :media => :screen %>
+<%= stylesheet_link_tag 'application' %>
+<%= stylesheet_link_tag "print", :media => :print %>
+ <%= csrf_meta_tags %>
+<!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
 </head>
-<body>
+<body id="page1">
 
 <%= yield %>
 
+<script type="text/javascript">Cufon.now();</script>
+<script type="text/javascript">
+$(window).load(function () {
+    $('.slider')._TMS({
+        duration: 1000,
+        easing: 'easeOutQuint',
+        preset: 'slideDown',
+        slideshow: 7000,
+        banners: false,
+        pauseOnHover: true,
+        pagination: true,
+        pagNums: false
+    });
+});
+</script>
+<div align=center>Order your delicacies now</a></div>
 </body>
 </html>

@@ -5,7 +5,7 @@ gem 'rails', '4.0.0'
 gem 'heroku' #Still needed to run pgbackups command from heroku platform
 gem 'heroku-api'
 
-gem 'sqlite3'
+gem 'pg'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby

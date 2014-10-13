@@ -6,6 +6,8 @@ Catering::Application.routes.draw do
   # website root is home/index
   root :to => "home#index"
 
+  get "menu/index" => "menu#index", :as => "menu"
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

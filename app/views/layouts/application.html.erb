@@ -11,24 +11,10 @@
 <!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
 </head>
 <body id="page1">
+ <%= render :partial => '/layouts/header' %>
+    <%= yield %>
+ <%= render :partial => '/layouts/footer' %>
 
-<%= yield %>
-
-<script type="text/javascript">Cufon.now();</script>
-<script type="text/javascript">
-$(window).load(function () {
-    $('.slider')._TMS({
-        duration: 1000,
-        easing: 'easeOutQuint',
-        preset: 'slideDown',
-        slideshow: 7000,
-        banners: false,
-        pauseOnHover: true,
-        pagination: true,
-        pagNums: false
-    });
-});
-</script>
 <div align=center>Order your delicacies now</a></div>
 </body>
 </html>

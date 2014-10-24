@@ -19,7 +19,12 @@
 	<% if alert %>
 	  <p class="alert alert-danger"><%= alert %></p>
 	<% end %>
-    <%= yield %>
+	<section id="content">
+    	<div class="main">
+    		<%= yield %>
+    	</div>
+    </section>
+
  <%= render :partial => '/layouts/footer' %>
 
 <div align=center>Order your delicacies now</a></div>

@@ -6,7 +6,7 @@ gem 'heroku' #Still needed to run pgbackups command from heroku platform
 gem 'heroku-api'
 
 gem 'pg'
-#gem 'unicorn'
+gem 'unicorn'
 
 gem 'devise'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes

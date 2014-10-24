@@ -8,6 +8,8 @@ gem 'heroku-api'
 gem 'pg'
 gem 'unicorn'
 
+gem 'devise'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -38,6 +40,7 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor', group: :production
+
 
 group :assets do
    gem 'sass-rails'

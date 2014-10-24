@@ -9,21 +9,22 @@
 
  <%= csrf_meta_tags %>
 <!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
-
+	
 </head>
 <body id="page1">
- <%= render :partial => '/layouts/header' %>
- 	<% if notice %>
+	<% if notice %>
 	  <p class="alert alert-success"><%= notice %></p>
 	<% end %>
 	<% if alert %>
 	  <p class="alert alert-danger"><%= alert %></p>
 	<% end %>
+ <%= render :partial => '/layouts/header' %>
+ 
 	<section id="content">
     	<div class="main">
     		<%= yield %>
     	</div>
-    </section>
+    </section>          
 
  <%= render :partial => '/layouts/footer' %>
 

@@ -8,7 +8,7 @@ Catering::Application.routes.draw do
   root :to => "home#index"
 
   get "menu/index" => "menu#index", :as => "menu"
-  devise_for :users, :controllers => { registrations: 'registrations' }
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

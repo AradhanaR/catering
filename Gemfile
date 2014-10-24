@@ -9,7 +9,6 @@ gem 'pg'
 gem 'unicorn'
 
 gem 'devise'
-gem 'ruby', '2.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

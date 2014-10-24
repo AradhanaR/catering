@@ -1,6 +1,5 @@
 class CreateUserTables < ActiveRecord::Migration
   def change
-    create_table :user_tables do |t|
-    end
+     drop_table :user_tables
   end
 end

@@ -3,7 +3,7 @@
   <div class="row-top">
     <div class="main">
       <div class="wrapper">
-        <h1><a href="#">Catering<span>.com</span></a></h1>
+        <h1><a href="#">Foodies<span>.com</span></a></h1>
         <nav>
           <ul class="menu">
             <li><a class="active" href="<%= root_path %>">About</a></li>
@@ -12,6 +12,15 @@
             <li><a href="shipping.html">Shipping</a></li>
             <li><a href="faq.html">FAQ </a></li>
             <li><a href="contact.html">Contact</a></li>
+            <% if current_user %>
+              <li><a href="<%= edit_user_registration_path %>">Edit profile</a></li>
+              <li>
+                <%= link_to "Logout", destroy_user_session_path, method: :delete  %>
+              </li>
+            <% else %>
+              <li><a href="<%=new_user_session_path %>">Login</a></li>
+              <li><a href="<%= new_user_registration_path %>">Signup</a></li>
+            <% end %>
           </ul>
         </nav>
       </div>

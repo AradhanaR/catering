@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Catering.com</title>
+<title>Foodies.com</title>
 <meta charset="utf-8">
 <%= javascript_include_tag "application" %>
 <% stylesheet_link_tag "skins/#{@section}", :media => :screen %>
@@ -9,12 +9,25 @@
 
  <%= csrf_meta_tags %>
 <!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+	
 </head>
 <body id="page1">
+	<% if notice %>
+	  <p class="alert alert-success"><%= notice %></p>
+	<% end %>
+	<% if alert %>
+	  <p class="alert alert-danger"><%= alert %></p>
+	<% end %>
  <%= render :partial => '/layouts/header' %>
-    <%= yield %>
+ 
+	<section id="content">
+    	<div class="main">
+    		<%= yield %>
+    	</div>
+    </section>          
+
  <%= render :partial => '/layouts/footer' %>
 
-<div align=center>Order your delicacies now</a></div>
+
 </body>
 </html>

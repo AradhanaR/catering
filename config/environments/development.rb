@@ -31,4 +31,23 @@ Catering::Application.configure do
   config.assets.debug = true
 
   config.action_mailer.default_url_options = { :host => HOST }
+
+  # General Settings
+  config.app_domain = 'catering-app.herokuapp.com'
+
+  # Email
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default_url_options = { host: config.app_domain }
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.gmail.com', 
+    port: '587',
+    enable_starttls_auto: true,
+    user_name: 'aradhana.online19@gmail.com',
+    password: 'attitude19',
+    authentication: :plain,
+    domain: config.app_domain
+  }
+
+  
 end

@@ -9,6 +9,14 @@ gem 'pg'
 gem 'unicorn'
 
 gem 'devise'
+
+# social login/sign-up
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'omniauth-linkedin'
+
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
